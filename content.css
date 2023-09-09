@@ -1,89 +1,55 @@
-/* Imágenes utilizadas */
-/* my_list.gif - Sustituye al punto de las listas no numeradas introducidas desde eXeLearning  */
-/* my_ims_header.jpg - Imagen de fondo para el título de cada página en los IMS y en los documentos exportados como Página sola */
-/* my_header.jpg - Imagen de la cabecera de los documentos exportados como Sitio web */
-/* my_nav_bg.jpg - Imagen de fondo del menú al exportar como Sitio web */
-
-/* Colores */
-body{
-	color:#000; /* Cuerpo de texto */
-	background:#ffffff; /* Color de fondo */
-}
-a{
-	color:#38565F; /* Enlaces */
-}
-#header{
-	color:#005F6F; /* Título del proyecto */	
-}
-#nodeTitle{
-	color:#FFFFFF; /* Título de cada página */
-}
-#main #nodeDecoration{
-	border-color:#E7EBEE; /* Borde del título de cada página */
-	background-color:#6D95A1; /* Color de fondo */
-	text-shadow:1px 1px 1px #466A76; /* Sombra del texto */
-}
-.iDeviceTitle{
-	color: #38565F; /* Títulos de los iDevices */
-}
-.iDevice_inner{
-	background-color:#F2F4EB; /* Fondo del cuerpo del iDevice */
-	color:#2C4E46; /* Texto de los iDevices */
-	border-color:#C7CFAB; /* Borde del cuerpo de los iDevices */
-}
-#siteFooter{
-	color:#38565F; /* Texto del pie de página */
-}
-#siteFooter a{
-	color:#6A3A4A; /* Enlaces del pie de página */
-}
-.pre-code{
-	background:#243338; /* Color de fondo del código de ordenador intertado desde TinyMCE */
-}
-
-/* Otras definiciones */
-body{font:.75em/1.5 Arial,Verdana,Helvetica,sans-serif;padding:15px;margin:0;text-align:left}
-#nodeTitle{font-size:1.5em;margin:0;text-align:left;font-weight:bold}
-#main #nodeDecoration{padding:20px 15px 5px 15px;margin-bottom:15px;background-repeat:no-repeat;background-position:right 0;border-width:1px;border-style:solid;background-image:url(my_ims_header.jpg);text-align:left}
-#header{height:auto;padding:0;font-size:1.5em;font-weight:bold}
+body{font:.75em/1.5 Arial,Verdana,Helvetica,sans-serif;padding:15px;margin:0;text-align:left;color:#333;background:#ffffff}
+a{color:#CE2239}
+#header,#emptyHeader{text-align:left;height:75px;padding-left:250px;font-size:1.25em;line-height:101px;vertical-align:bottom;color:#000;background:#fff url(_max_cabecera.jpg) no-repeat 0 0;border-top:5px solid #000;border-bottom:5px solid #000}
 #header h1{margin:0;font-size:1em}
-#main ul li{width:auto;list-style-image:url(my_list.gif);margin-bottom:0.2em}
-#wikipedia-content ul li{list-style-image:none;margin-bottom:auto}
-#main h2{font-size:1.4em}
-#main h3{font-size:1.3em}
+#nodeTitle,.nodeTitle{font-size:1.5em;margin:0;text-align:left;font-weight:bold;color:#222;padding:.1em 0 .6em 0;border-bottom:5px solid #B50536} /* .nodeTitle when single page */
+#main .nodeTitle{margin-top:.6em;color:#222}
+#main #nodeDecoration{padding:10px 0 5px 0;margin-bottom:15px;border:0;background:url(_max_titulo_nodo.jpg) no-repeat right 0;text-align:left}
+#main h2{font-size:1.4em;color:#9A042F}
+#main .iDeviceTitle{display:inline;font-size:1.2em;color:#9A042F}
+#main h3{font-size:1.3em;color:#1E80B8}
 #main h4{font-size:1.2em}
 #main h5{font-size:1.1em}
-.iDevice{margin:10px 0 20px 0}
-.iDeviceTitle{font-size:1.2em;vertical-align:bottom;top:auto}
-#main .iDeviceTitle{display:inline;font-size:1.2em}
+.iDevice{margin:1.8em 0}
+.iDeviceTitle{font-size:1.2em;vertical-align:top;top:-2px;color:#666;line-height:2em}
+.iDevice_icon{width:23px;height:auto;margin-right:5px} /* Icons: "Iconic" (Creative Commons by-sa), by P. J. Onori (http://www.somerandomdude.com/work/iconic/) */
 
 /* iDevice icons */
-.iDevice_icon{width:30px;height:auto;margin-right:5px} /* Legacy: old iDevices */
-.iDevice_header{background-image:url(icon_generic.gif);padding:5px 0 5px 37px;margin-bottom:3px}
+.iDevice_header{background:url(icon_generic.gif) no-repeat 0 0;padding-left:29px}
 .activityIdevice .iDevice_header{background-image:url(icon_activity.gif)}
-.readingIdevice .iDevice_header{background-image:url(icon_reading.gif);padding-left:41px}
+.readingIdevice .iDevice_header{background-image:url(icon_reading.gif)}
 .ListaIdevice .iDevice_header,
 .QuizTestIdevice .iDevice_header,
 .MultichoiceIdevice .iDevice_header,
 .TrueFalseIdevice .iDevice_header,
 .MultiSelectIdevice .iDevice_header,
-.ClozeIdevice .iDevice_header{background-image:url(icon_question.gif);padding-left:35px}
+.ClozeIdevice .iDevice_header{background-image:url(icon_question.gif)}
 .CasestudyIdevice .iDevice_header{background-image:url(icon_casestudy.gif)}
-.preknowledgeIdevice .iDevice_header{background-image:url(icon_preknowledge.gif);padding-left:39px}
-.GalleryIdevice .iDevice_header{background-image:url(icon_gallery.gif);padding-left:38px}
+.preknowledgeIdevice .iDevice_header{background-image:url(icon_preknowledge.gif)}
+.GalleryIdevice .iDevice_header{background-image:url(icon_gallery.gif)}
 .objectivesIdevice .iDevice_header{background-image:url(icon_objectives.gif)}
 .ReflectionIdevice .iDevice_header{background-image:url(icon_reflection.gif)}
 
 .iDevice_content{overflow:auto}
-.iDevice_inner{padding: 10px 20px;border-width:1px;border-style:solid;border-radius:10px}
+.iDevice_inner{padding: 10px 20px;border:1px solid #f0f0f0;background:#f9f9f9;color:#444;border-radius:5px}
+#siteFooter{color:#666666;font-size:.95em;border-top:5px solid #B50536;padding:15px 0}
+#siteFooter a{color:#000}
+input,select,textarea{font-family:Arial,Verdana,Helvetica,sans-serif;font-size:1em}
+#lbOverlay{background-color:#f3f3f3}
+#lbOuterContainer{border-color:#ddd}
+.ExternalUrlIdevice iframe{border:none}
 /* base.css */
 .block,.feedback{padding:0}
-input.feedbackbutton{margin:0}
 .feedback{font-family:Arial,Verdana,Helvetica,sans-serif;font-size:1em}
 li{list-style-position:outside}
+#wikipedia-content ul li{list-style-image:none;margin-bottom:auto}
+/* Form buttons */
+.iDevice_inner input[type=submit],.iDevice_inner input[type=button],.feedbackbutton{background:#B50536;border:0;padding:3px 5px;color:#fff;border-radius:5px;text-shadow:1px 1px 1px #000;box-shadow:1px 1px 3px 0 #ccc;margin-bottom:1em}
+.iDevice_inner input[type=submit]:hover,.iDevice_inner input[type=button]:hover,.feedbackbutton:hover{background:#000;color:#f3f3f3}
+
 /* Hide/Show iDevice */
 .toggle-idevice{margin:12px 0 0;text-align:right;display:block}
 .iDevice_header .toggle-idevice{float:right;padding-top:2px;margin:0}
-.toggle-idevice a{display:inline-block;width:16px;height:16px;background:url(my_hide_show.gif) no-repeat 0 -16px}
+.toggle-idevice a{display:inline-block;width:16px;height:16px;background:url(_max_ocultar_mostrar.gif) no-repeat 0 -16px}
 .toggle-idevice .show-idevice{background-position:0 0}
 .toggle-idevice span{position:absolute;overflow:hidden;clip:rect(0,0,0,0);height:0}
